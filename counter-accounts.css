@@ -1,0 +1,562 @@
+.counter-page-description {
+  margin: 7px 0 0;
+  opacity: 0.65;
+  font-size: 14px;
+}
+
+.counter-success-message {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: rgba(28, 200, 140, 0.1);
+  border: 1px solid rgba(28, 200, 140, 0.25);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.counter-refresh-button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.counter-account-modal {
+  max-width: 620px;
+  width: calc(100% - 30px);
+  max-height: 92vh;
+  overflow-y: auto;
+}
+
+.admin-modal-header p {
+  margin: 7px 0 0;
+  opacity: 0.65;
+  font-size: 13px;
+}
+
+.counter-account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.counter-account-form label {
+  margin-top: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.password-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-wrapper input {
+  width: 100%;
+  padding-left: 46px !important;
+}
+
+.password-input-wrapper button {
+  position: absolute;
+  left: 8px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.counter-form-security-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 12px;
+  background: rgba(122, 92, 255, 0.08);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.counter-form-security-note svg {
+  min-width: 18px;
+  margin-top: 3px;
+}
+
+.counter-info-list > div > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+/* =========================================================
+   ROUTE SELECTOR
+========================================================= */
+
+.counter-route-selector {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(127, 127, 127, 0.18);
+  background: rgba(127, 127, 127, 0.035);
+}
+
+.counter-route-selector-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 13px;
+}
+
+.counter-route-selector-header > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.counter-route-selector-header > div:first-child > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter-route-selector-header strong {
+  font-size: 14px;
+}
+
+.counter-route-selector-header span {
+  margin-top: 2px;
+  font-size: 11px;
+  opacity: 0.58;
+}
+
+.route-selector-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.route-selector-actions button {
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 9px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.route-selector-actions button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.route-selector-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 24px 12px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(127, 127, 127, 0.05);
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.route-selector-empty button {
+  border: 0;
+  border-radius: 8px;
+  padding: 7px 11px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.route-selector-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.route-selector-search svg {
+  position: absolute;
+  right: 11px;
+  opacity: 0.55;
+}
+
+.route-selector-search input {
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: 38px !important;
+}
+
+.selected-route-count {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.counter-route-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  max-height: 240px;
+  overflow-y: auto;
+  padding-left: 3px;
+}
+
+.counter-route-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: right;
+  border: 1px solid rgba(127, 127, 127, 0.12);
+  border-radius: 11px;
+  padding: 10px;
+  background: rgba(127, 127, 127, 0.025);
+  cursor: pointer;
+  font-family: inherit;
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    background 0.15s ease;
+}
+
+.counter-route-option:hover {
+  transform: translateY(-1px);
+  border-color: rgba(122, 92, 255, 0.35);
+}
+
+.counter-route-option.selected {
+  background: rgba(122, 92, 255, 0.09);
+  border-color: rgba(122, 92, 255, 0.38);
+}
+
+.route-option-check {
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  border: 1px solid rgba(127, 127, 127, 0.25);
+}
+
+.counter-route-option.selected .route-option-check {
+  background: rgba(122, 92, 255, 0.16);
+}
+
+.route-option-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.route-option-content strong {
+  font-size: 13px;
+}
+
+.route-option-content small {
+  display: block;
+  max-width: 440px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  direction: ltr;
+  text-align: left;
+  opacity: 0.48;
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   CREDENTIAL ADMIN
+========================================================= */
+
+.credential-admin-section,
+.credential-history-section,
+.credential-profile-section {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 18px;
+  background: var(
+    --card-bg,
+    rgba(255, 255, 255, 0.04)
+  );
+  border: 1px solid rgba(127, 127, 127, 0.15);
+}
+
+.credential-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.credential-section-heading span {
+  font-size: 12px;
+  opacity: 0.55;
+}
+
+.credential-section-heading h2 {
+  margin: 4px 0 0;
+  font-size: 19px;
+}
+
+.pending-request-count {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 166, 0, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.credential-request-list,
+.credential-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.credential-request-card {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 1fr)
+    minmax(180px, 1fr)
+    auto;
+  align-items: center;
+  gap: 18px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(127, 127, 127, 0.15);
+}
+
+.credential-request-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-small-avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(122, 92, 255, 0.12);
+}
+
+.credential-request-user div:last-child,
+.credential-request-changes div,
+.credential-history-item > div,
+.pending-credential-box > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.credential-request-user span,
+.credential-history-item > div > span {
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+.credential-request-changes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.credential-request-changes span {
+  font-size: 11px;
+  opacity: 0.55;
+}
+
+.credential-request-actions {
+  display: flex;
+  gap: 7px;
+}
+
+.credential-request-actions button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  border-radius: 9px;
+  padding: 9px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.credential-approve-button {
+  background: rgba(19, 191, 125, 0.14);
+}
+
+.credential-reject-button {
+  background: rgba(230, 70, 80, 0.12);
+}
+
+.credential-history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: rgba(127, 127, 127, 0.05);
+}
+
+.credential-status {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.credential-status.pending {
+  background: rgba(255, 166, 0, 0.13);
+}
+
+.credential-status.approved {
+  background: rgba(20, 190, 125, 0.13);
+}
+
+.credential-status.rejected {
+  background: rgba(220, 60, 75, 0.12);
+}
+
+
+/* =========================================================
+   COUNTER PROFILE CREDENTIALS
+========================================================= */
+
+.credential-profile-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.credential-profile-heading > div:first-child {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: rgba(122, 92, 255, 0.12);
+}
+
+.credential-profile-heading span {
+  opacity: 0.55;
+  font-size: 12px;
+}
+
+.credential-profile-heading h2 {
+  margin: 3px 0 5px;
+}
+
+.credential-profile-heading p {
+  margin: 0;
+  opacity: 0.65;
+  font-size: 13px;
+}
+
+.credential-change-form {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.credential-change-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.credential-change-form label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.credential-change-form input {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.credential-submit-button {
+  grid-column: 1 / -1;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.pending-credential-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px;
+  border-radius: 14px;
+  background: rgba(255, 166, 0, 0.09);
+}
+
+.pending-credential-box span {
+  font-size: 12px;
+  opacity: 0.68;
+}
+
+.empty-credential-history {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 16px;
+  opacity: 0.65;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .credential-request-card {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-change-form {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-submit-button {
+    grid-column: auto;
+  }
+
+  .counter-route-selector-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
